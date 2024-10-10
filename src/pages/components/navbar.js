@@ -5,8 +5,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export default function Menu() {
   return (
-    <Navbar expand="sm" className="degrademenu">
-      <Container>
+    <Container>
+      <Navbar expand="sm" bg="dark" data-bs-theme="dark" className="ps-5  rounded-3 border border-4 boder-warning" >
         <Navbar.Brand href="/">6V</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -15,7 +15,7 @@ export default function Menu() {
             <Nav.Link href="#link">Link</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      </Container>
-    </Navbar>
+      </Navbar>
+    </Container>
   );
 }
