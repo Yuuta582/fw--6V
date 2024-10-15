@@ -1,12 +1,10 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import {Container, Nav, Navbar} from 'react-bootstrap';
+import style from "@/styles/Navbar.module.css"
 
 export default function Menu() {
   return (
     <Container>
-      <Navbar expand="sm" bg="dark" data-bs-theme="dark" className="ps-5  rounded-3 border border-4 boder-warning" >
+      <Navbar expand="sm" bg="dark" data-bs-theme="dark" className={`${style.degrademenu} ps-5  rounded-3 border border-4 boder-warning`}>
         <Navbar.Brand href="/">6V</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
