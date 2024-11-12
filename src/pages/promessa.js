@@ -8,15 +8,19 @@ export default function Promessa() {
     useEffect(() => {
         setTimeout(() => {
             document.title = "Minha Promessa"
-            setDivida("da vida")
+            setDivida(saoLoguinho("da vida"))
         }, 4000);
     })
     return <>
         <Menu />
         <Container>
-            Promessas {(divida==="" ? "<carregando>" : divida)}
+            Promessas {(divida==="" ? <img src="loading.gif" width={89} height={45}/> : divida)}
         </Container>
         <Footer />
     </>
 }
-function sao
+function saoLoguinho(texto){ 
+    setTimeout(() =>{
+        return(texto)
+    },2000)
+}
