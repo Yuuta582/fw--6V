@@ -14,6 +14,7 @@ export default function Menu() {
             <Nav.Link href='/produto'>Produto</Nav.Link>
             <Nav.Link href='/promessa'>Promessas</Nav.Link>
             <Nav.Link href='/pages'>Pages</Nav.Link>
+            <Nav.Link href="/pesportes">P.Esportes</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
